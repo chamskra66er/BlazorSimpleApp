@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "O/6fwVAkKgsVEXahkHkJ/6+JXlEV7uBOacR1u4WzLvaLLNaYl7PhViMzJLUkh3jZTcHGUXGEh8gGClqrPiRWtA==",
+  "dgSpecHash": "g1qEN1/u4KZRcnl/YAM69Ojf9lqbPCB+nCEjiHT7bPfEyesgIrLFXNF8bFSJqFQgzO8Fh2t+xrnz9JKNX5ukfg==",
   "success": true,
   "projectFilePath": "C:\\VS\\ASP_Net_Core\\Blazor\\Test\\NewBlazor\\Client\\NewBlazor.Client.csproj",
   "expectedPackageFiles": [
@@ -26,6 +26,7 @@
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.2\\microsoft.extensions.primitives.3.1.2.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.jsinterop\\3.1.2\\microsoft.jsinterop.3.1.2.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.jsinterop.webassembly\\3.2.0-preview2.20160.5\\microsoft.jsinterop.webassembly.3.2.0-preview2.20160.5.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",

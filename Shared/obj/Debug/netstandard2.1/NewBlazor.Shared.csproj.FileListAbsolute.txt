@@ -6,3 +6,4 @@ C:\VS\ASP_Net_Core\Blazor\Test\NewBlazor\Shared\obj\Debug\netstandard2.1\NewBlaz
 C:\VS\ASP_Net_Core\Blazor\Test\NewBlazor\Shared\obj\Debug\netstandard2.1\NewBlazor.Shared.AssemblyInfo.cs
 C:\VS\ASP_Net_Core\Blazor\Test\NewBlazor\Shared\obj\Debug\netstandard2.1\NewBlazor.Shared.dll
 C:\VS\ASP_Net_Core\Blazor\Test\NewBlazor\Shared\obj\Debug\netstandard2.1\NewBlazor.Shared.pdb
+C:\VS\ASP_Net_Core\Blazor\Test\NewBlazor\Shared\obj\Debug\netstandard2.1\NewBlazor.Shared.csprojAssemblyReference.cache

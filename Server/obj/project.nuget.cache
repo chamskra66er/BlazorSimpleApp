@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "PP5JkQ539DXwL90ImW7lmKerT5Ioj+4RIhQZlM3PNUEGYlzEAdViEN6w+mamQQusewTriosdPGZltHyIueQ5Wg==",
+  "dgSpecHash": "q4FWlCQ+p/rvkdEPyHTCrvbsbLGcc6O5ZkG3xi6xsDWCzNhOADFasG5W/vtWFN43yXaOvbBRS7hl2t7f8VQ95w==",
   "success": true,
   "projectFilePath": "C:\\VS\\ASP_Net_Core\\Blazor\\Test\\NewBlazor\\Server\\NewBlazor.Server.csproj",
   "expectedPackageFiles": [
@@ -43,7 +43,7 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\mono.cecil\\0.10.1\\mono.cecil.0.10.1.nupkg.sha512",
-    "C:\\Users\\admin\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.native.system.security.cryptography\\4.0.0\\runtime.native.system.security.cryptography.4.0.0.nupkg.sha512",
