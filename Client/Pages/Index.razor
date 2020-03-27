@@ -1,7 +1,61 @@
 ﻿@page "/"
+@using NewBlazor.Shared
 
-<h1>Hello, world!</h1>
+
+<h1>Pizza List</h1>
+@foreach (var pizza in State.Menu.Pizzas)
+{ 
+    <div class="row">
+        <div class="col">
+            @pizza.Name
+        </div>
+        <div class="col">
+            @pizza.Price
+        </div>
+        <div class="col">
+            <img src="@SpicinessImage(pizza.Spiciness)" alt="@pizza.Spiciness"/>
+        </div>
+    </div>
+}
 
 Welcome to your new app.
 
 <SurveyPrompt Title="How is Blazor working for you?" />
+@functions
+{
+    private string SpicinessImage(Spiciness spiciness)
+    {
+        return $"images/{spiciness.ToString().ToLower()}.png";
+    }
+}
+
+@functions{
+    private State State { get; } = new State()
+        {
+            Menu = new Menu
+            {
+                Pizzas = new List<Pizza>
+            {
+                new Pizza{
+                    Id=1,
+                    Name ="Pepperoni",
+                    Price =8.99,
+                    Spiciness= Spiciness.Spicy
+                },
+                new Pizza{
+                    Id=2,
+                    Name ="Margarita",
+                    Price =7.99,
+                    Spiciness= Spiciness.None
+                },
+                new Pizza{
+                    Id=3,
+                    Name ="Diabolo",
+                    Price =9.99,
+                    Spiciness= Spiciness.Hot
+                }
+            }
+            }
+        };
+
+}
