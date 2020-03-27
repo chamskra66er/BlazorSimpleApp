@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "AJmCg7c9wQRw4b/4d+x7z200dNqWHyEoGyQHy7ZRQ3wXHSlOkRwNLlIeXCz55w6P3AgMFhOkZnHj6/guwMo8vQ==",
+  "dgSpecHash": "PP5JkQ539DXwL90ImW7lmKerT5Ioj+4RIhQZlM3PNUEGYlzEAdViEN6w+mamQQusewTriosdPGZltHyIueQ5Wg==",
   "success": true,
   "projectFilePath": "C:\\VS\\ASP_Net_Core\\Blazor\\Test\\NewBlazor\\Server\\NewBlazor.Server.csproj",
   "expectedPackageFiles": [
@@ -108,6 +108,7 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.threading\\4.3.0\\system.threading.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.threading.tasks.extensions\\4.3.0\\system.threading.tasks.extensions.4.3.0.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",

@@ -259,17 +259,3 @@ C:\VS\ASP_Net_Core\Blazor\Test\NewBlazor\Client\obj\Debug\netstandard2.1\NewBlaz
 C:\VS\ASP_Net_Core\Blazor\Test\NewBlazor\Client\obj\Debug\netstandard2.1\NewBlazor.Client.pdb
 C:\VS\ASP_Net_Core\Blazor\Test\NewBlazor\Client\obj\Debug\netstandard2.1\RazorDeclaration\Pages\Product\Index.razor.g.cs
 C:\VS\ASP_Net_Core\Blazor\Test\NewBlazor\Client\bin\Debug\netstandard2.1\Microsoft.AspNetCore.Blazor.dll
-C:\VS\ASP_Net_Core\Blazor\Test\NewBlazor\Client\obj\Debug\netstandard2.1\NewBlazor.Client.csproj.CoreCompileInputs.cache
-C:\VS\ASP_Net_Core\Blazor\Test\NewBlazor\Client\obj\Debug\netstandard2.1\RazorDeclaration\NewBlazor.Client.dll
-C:\VS\ASP_Net_Core\Blazor\Test\NewBlazor\Client\obj\Debug\netstandard2.1\NewBlazor.Client.TagHelpers.input.cache
-C:\VS\ASP_Net_Core\Blazor\Test\NewBlazor\Client\obj\Debug\netstandard2.1\NewBlazor.Client.TagHelpers.output.cache
-C:\VS\ASP_Net_Core\Blazor\Test\NewBlazor\Client\obj\Debug\netstandard2.1\NewBlazor.Client.RazorCoreGenerate.cache
-C:\VS\ASP_Net_Core\Blazor\Test\NewBlazor\Client\obj\Debug\netstandard2.1\Razor\App.razor.g.cs
-C:\VS\ASP_Net_Core\Blazor\Test\NewBlazor\Client\obj\Debug\netstandard2.1\Razor\Pages\Counter.razor.g.cs
-C:\VS\ASP_Net_Core\Blazor\Test\NewBlazor\Client\obj\Debug\netstandard2.1\Razor\Pages\FetchData.razor.g.cs
-C:\VS\ASP_Net_Core\Blazor\Test\NewBlazor\Client\obj\Debug\netstandard2.1\Razor\Pages\Index.razor.g.cs
-C:\VS\ASP_Net_Core\Blazor\Test\NewBlazor\Client\obj\Debug\netstandard2.1\Razor\Pages\Product\Index.razor.g.cs
-C:\VS\ASP_Net_Core\Blazor\Test\NewBlazor\Client\obj\Debug\netstandard2.1\Razor\Shared\MainLayout.razor.g.cs
-C:\VS\ASP_Net_Core\Blazor\Test\NewBlazor\Client\obj\Debug\netstandard2.1\Razor\Shared\NavMenu.razor.g.cs
-C:\VS\ASP_Net_Core\Blazor\Test\NewBlazor\Client\obj\Debug\netstandard2.1\Razor\Shared\SurveyPrompt.razor.g.cs
-C:\VS\ASP_Net_Core\Blazor\Test\NewBlazor\Client\obj\Debug\netstandard2.1\Razor\_Imports.razor.g.cs

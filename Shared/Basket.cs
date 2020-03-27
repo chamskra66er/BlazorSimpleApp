@@ -13,5 +13,9 @@ namespace NewBlazor.Shared
         {
             Orders.Add(pizzaId);
         }
+        public void RemoveAt(int pos)
+        {
+            Orders.Remove(pos);
+        }
     }
 }
