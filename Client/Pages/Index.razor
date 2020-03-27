@@ -58,16 +58,43 @@
     <p>
         <label for="name">Name:</label>
         <input id="name" bind="@State.Basket.Customer.Name" />
+        @if (State.Basket.Customer.GetErrors(nameof(Customer.Name)).Any())
+        {
+            <ul class="validation-error">
+                @foreach (string error in State.Basket.Customer.GetErrors(nameof(Customer.Name)))
+                {
+                    <li>@error</li>
+                }
+            </ul>
+        }
     </p>
     <p>
         <label for="street">Street:</label>
         <input id="street" bind="@State.Basket.Customer.Street" />
+        @if (State.Basket.Customer.GetErrors(nameof(Customer.Street)).Any())
+        {
+            <ul class="validation-error">
+                @foreach (string error in State.Basket.Customer.GetErrors(nameof(Customer.Street)))
+                {
+                    <li>@error</li>
+                }
+            </ul>
+        }
     </p>
     <p>
         <label for="city">City:</label>
         <input id="city" bind="@State.Basket.Customer.City" />
+        @if (State.Basket.Customer.GetErrors(nameof(Customer.City)).Any())
+        {
+            <ul class="validation-error">
+                @foreach (string error in State.Basket.Customer.GetErrors(nameof(Customer.City)))
+                {
+                    <li>@error</li>
+                }
+            </ul>
+        }
     </p>
-    <button @onclick="@PlaceOrder">Checkout</button>
+    <button @onclick="@PlaceOrder" disabled="@State.Basket.Customer.HasErrors">Checkout</button>
 </fieldset>
 @if (State.Basket.Orders.Count()>0)
 { 
