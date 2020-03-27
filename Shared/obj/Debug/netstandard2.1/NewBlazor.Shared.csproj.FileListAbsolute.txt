@@ -1,0 +1,9 @@
+C:\VS\ASP_Net_Core\Blazor\Test\NewBlazor\Shared\bin\Debug\netstandard2.1\NewBlazor.Shared.deps.json
+C:\VS\ASP_Net_Core\Blazor\Test\NewBlazor\Shared\bin\Debug\netstandard2.1\NewBlazor.Shared.dll
+C:\VS\ASP_Net_Core\Blazor\Test\NewBlazor\Shared\bin\Debug\netstandard2.1\NewBlazor.Shared.pdb
+C:\VS\ASP_Net_Core\Blazor\Test\NewBlazor\Shared\obj\Debug\netstandard2.1\NewBlazor.Shared.csproj.CoreCompileInputs.cache
+C:\VS\ASP_Net_Core\Blazor\Test\NewBlazor\Shared\obj\Debug\netstandard2.1\NewBlazor.Shared.AssemblyInfoInputs.cache
+C:\VS\ASP_Net_Core\Blazor\Test\NewBlazor\Shared\obj\Debug\netstandard2.1\NewBlazor.Shared.AssemblyInfo.cs
+C:\VS\ASP_Net_Core\Blazor\Test\NewBlazor\Shared\obj\Debug\netstandard2.1\NewBlazor.Shared.dll
+C:\VS\ASP_Net_Core\Blazor\Test\NewBlazor\Shared\obj\Debug\netstandard2.1\NewBlazor.Shared.pdb
+C:\VS\ASP_Net_Core\Blazor\Test\NewBlazor\Shared\obj\Debug\netstandard2.1\NewBlazor.Shared.csprojAssemblyReference.cache

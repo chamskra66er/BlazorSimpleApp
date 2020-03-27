@@ -1,0 +1,4 @@
+﻿<StaticWebAssets Version="1.0">
+  <ContentRoot BasePath="/" Path="C:\VS\ASP_Net_Core\Blazor\Test\NewBlazor\Client\wwwroot\" />
+  <ContentRoot BasePath="/" Path="C:\VS\ASP_Net_Core\Blazor\Test\NewBlazor\Client\bin\Debug\netstandard2.1\wwwroot\" />
+</StaticWebAssets>
