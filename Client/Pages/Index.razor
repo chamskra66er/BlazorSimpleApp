@@ -1,10 +1,15 @@
 ﻿@page "/"
 @using NewBlazor.Shared
+@using Microsoft.AspNetCore.Blazor.Services
 @using System.Globalization
+@inject IUriHelper UriHelper
 
 @{
     CultureInfo culture = new CultureInfo("en-US");
 }
+<PizzaList Title="Our selected list of pizzas"
+           Menu="@State.Menu"
+           Selected="@((pizza) => AddToBasket(pizza))" />
 
 <h1>Pizza List</h1>
 @foreach (var pizza in State.Menu.Pizzas)
@@ -30,7 +35,7 @@
 {
     <h1>Your current order</h1>
     @foreach (var (pizza, pos) in State.Basket.Orders.Select((id, pos) =>
-              (State.Menu.GetPizza(id), pos)))
+            (State.Menu.GetPizza(id), pos)))
     {
         <div class="row">
             <div class="col">
@@ -96,9 +101,9 @@
     </p>
     <button @onclick="@PlaceOrder" disabled="@State.Basket.Customer.HasErrors">Checkout</button>
 </fieldset>
-@if (State.Basket.Orders.Count()>0)
-{ 
-<p>@State.ToJson()</p>
+@if (State.Basket.Orders.Count() > 0)
+{
+    <p>@State.ToJson()</p>
 }
 
 
@@ -141,7 +146,7 @@
         Menu = new Menu
         {
             Pizzas = new List<Pizza>
-    {
+{
                 new Pizza{
                     Id=1,
                     Name ="Pepperoni",

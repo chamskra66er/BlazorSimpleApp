@@ -274,3 +274,11 @@ C:\VS\ASP_Net_Core\Blazor\Test\NewBlazor\Client\obj\Debug\netstandard2.1\Razor\S
 C:\VS\ASP_Net_Core\Blazor\Test\NewBlazor\Client\obj\Debug\netstandard2.1\Razor\Shared\NavMenu.razor.g.cs
 C:\VS\ASP_Net_Core\Blazor\Test\NewBlazor\Client\obj\Debug\netstandard2.1\Razor\Shared\SurveyPrompt.razor.g.cs
 C:\VS\ASP_Net_Core\Blazor\Test\NewBlazor\Client\obj\Debug\netstandard2.1\Razor\_Imports.razor.g.cs
+C:\VS\ASP_Net_Core\Blazor\Test\NewBlazor\Client\obj\Debug\netstandard2.1\RazorDeclaration\Pages\PizzaItem.razor.g.cs
+C:\VS\ASP_Net_Core\Blazor\Test\NewBlazor\Client\obj\Debug\netstandard2.1\RazorDeclaration\Pages\PizzaList.razor.g.cs
+C:\VS\ASP_Net_Core\Blazor\Test\NewBlazor\Client\obj\Debug\netstandard2.1\Razor\Pages\PizzaItem.razor.g.cs
+C:\VS\ASP_Net_Core\Blazor\Test\NewBlazor\Client\obj\Debug\netstandard2.1\Razor\Pages\PizzaList.razor.g.cs
+C:\VS\ASP_Net_Core\Blazor\Test\NewBlazor\Client\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\Microsoft.AspNetCore.Blazor.dll
+C:\VS\ASP_Net_Core\Blazor\Test\NewBlazor\Client\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\Microsoft.AspNetCore.Blazor.dll.gz
+C:\VS\ASP_Net_Core\Blazor\Test\NewBlazor\Client\obj\Debug\netstandard2.1\compressed\_framework\_bin\Microsoft.AspNetCore.Blazor.dll.gz
+C:\VS\ASP_Net_Core\Blazor\Test\NewBlazor\Client\obj\Debug\netstandard2.1\compressed\_framework\_bin\Microsoft.AspNetCore.Blazor.dll.gz.hash
