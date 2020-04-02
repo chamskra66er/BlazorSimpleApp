@@ -36,14 +36,13 @@ C:\Users\admin\.nuget\packages\microsoft.aspnetcore.components.webassembly.runti
 C:\Users\admin\.nuget\packages\microsoft.aspnetcore.components.webassembly.runtime\3.2.0-preview2.20159.2\build\netstandard1.0\..\..\tools\dotnetwasm\bcl\System.ComponentModel.DataAnnotations.dll
 C:\Users\admin\.nuget\packages\microsoft.aspnetcore.components\3.1.2\lib\netstandard2.0\Microsoft.AspNetCore.Components.dll
 C:\Users\admin\.nuget\packages\microsoft.extensions.logging.abstractions\3.1.2\lib\netstandard2.0\Microsoft.Extensions.Logging.Abstractions.dll
-C:\Users\admin\.nuget\packages\microsoft.aspnetcore.blazor\0.7.0\lib\netstandard2.0\Microsoft.AspNetCore.Blazor.dll
-C:\Users\admin\.nuget\packages\microsoft.jsinterop\3.1.2\lib\netstandard2.0\Microsoft.JSInterop.dll
 C:\VS\ASP_Net_Core\Blazor\Test\NewBlazor\Shared\bin\Debug\netstandard2.1\NewBlazor.Shared.dll
 C:\Users\admin\.nuget\packages\microsoft.aspnetcore.components.webassembly\3.2.0-preview2.20160.5\lib\netstandard2.1\Microsoft.AspNetCore.Components.WebAssembly.dll
 C:\Users\admin\.nuget\packages\microsoft.extensions.dependencyinjection\3.1.2\lib\netstandard2.1\Microsoft.Extensions.DependencyInjection.dll
 C:\Users\admin\.nuget\packages\microsoft.extensions.configuration\3.1.2\lib\netstandard2.0\Microsoft.Extensions.Configuration.dll
 C:\Users\admin\.nuget\packages\microsoft.extensions.primitives\3.1.2\lib\netstandard2.0\Microsoft.Extensions.Primitives.dll
 C:\Users\admin\.nuget\packages\microsoft.extensions.configuration.abstractions\3.1.2\lib\netstandard2.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\admin\.nuget\packages\microsoft.jsinterop\3.1.2\lib\netstandard2.0\Microsoft.JSInterop.dll
 C:\Users\admin\.nuget\packages\microsoft.jsinterop.webassembly\3.2.0-preview2.20160.5\lib\netstandard2.1\Microsoft.JSInterop.WebAssembly.dll
 obj\Debug\netstandard2.1\NewBlazor.Client.pdb
 C:\VS\ASP_Net_Core\Blazor\Test\NewBlazor\Shared\bin\Debug\netstandard2.1\NewBlazor.Shared.pdb

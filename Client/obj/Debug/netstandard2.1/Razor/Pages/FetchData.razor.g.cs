@@ -59,6 +59,13 @@ using NewBlazor.Client.Shared;
 #line hidden
 #nullable disable
 #nullable restore
+#line 8 "C:\VS\ASP_Net_Core\Blazor\Test\NewBlazor\Client\_Imports.razor"
+using System.ComponentModel;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 2 "C:\VS\ASP_Net_Core\Blazor\Test\NewBlazor\Client\Pages\FetchData.razor"
 using NewBlazor.Shared;
 

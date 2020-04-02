@@ -2,40 +2,74 @@
 @using NewBlazor.Shared
 @using Microsoft.AspNetCore.Blazor.Services
 @using System.Globalization
-@inject IUriHelper UriHelper
+@*@inject State State*@
+@*@inject IUriHelper UriHelper*@
 
 @{
     CultureInfo culture = new CultureInfo("en-US");
 }
-<PizzaList Title="Our selected list of pizzas"
-           Menu="@State.Menu"
-           Selected="@((pizza) => AddToBasket(pizza))" />
 
-<h1>Pizza List</h1>
-@foreach (var pizza in State.Menu.Pizzas)
+<!--Menu -->
+<PizzaList Title="Our selected list of pizzas"
+    Menu="@State.Menu"
+    Selected="@((pizza) => AddToBasket(pizza))" />
+ <!--Shopping Basket-->
+@*<ShoppingBasket Title="Your current order"
+    Basket="@State.Basket"
+    GetPizzaFromId="@State.Menu.GetPizza"
+    Selected="@(pos => RemoveFromBascket(pos))" />*@
+<!-- End shopping basket -->
+
+
+@code
+    {
+    private string SpicinessImage(Spiciness spiciness)
+    {
+        return $"images/{spiciness.ToString().ToLower()}.png";
+    }
+    private void AddToBasket(Pizza pizza)
+    {
+        Console.WriteLine($"Added pizza {pizza.Name}");
+        State.Basket.Add(pizza.Id);
+        StateHasChanged();
+    }
+    private void RemoveFromBascket(int pos)
+    {
+        Console.WriteLine($"Removing pizza at pos {pos}");
+        State.Basket.RemoveAt(pos);
+    }
+    private State State { get; } = new State()
+    {
+        Menu = new Menu
+        {
+            Pizzas = new List<Pizza>
 {
-    <div class="row">
-        <div class="col">
-            @pizza.Name
-        </div>
-        <div class="col">
-            @pizza.Price.ToString("C2", culture)
-        </div>
-        <div class="col">
-            <img src="@SpicinessImage(pizza.Spiciness)" alt="@pizza.Spiciness" />
-        </div>
-        <div class="col">
-            <button class="btn btn-success btn-sm" @onclick="@(() => AddToBasket(pizza))">
-                Add
-            </button>
-        </div>
-    </div>
+                    new Pizza{
+                        Id=1,
+                        Name ="Pepperoni",
+                        Price =8.99,
+                        Spiciness= Spiciness.Spicy
+                    },
+                    new Pizza{
+                        Id=2,
+                        Name ="Margarita",
+                        Price =7.99,
+                        Spiciness= Spiciness.None
+                    },
+                    new Pizza{
+                        Id=3,
+                        Name ="Diabolo",
+                        Price =9.99,
+                        Spiciness= Spiciness.Hot
+                    }
+                }
+        }
+    };
 }
-@if (State.Basket.Orders.Any())
-{
-    <h1>Your current order</h1>
-    @foreach (var (pizza, pos) in State.Basket.Orders.Select((id, pos) =>
-            (State.Menu.GetPizza(id), pos)))
+
+<!--End Menu-->
+@*<h1>Pizza List</h1>
+    @foreach (var pizza in State.Menu.Pizzas)
     {
         <div class="row">
             <div class="col">
@@ -45,128 +79,151 @@
                 @pizza.Price.ToString("C2", culture)
             </div>
             <div class="col">
-                <button class="btn btn-danger btn-sm" @onclick="@(()=>RemoveFromBascket(pos))">
-                    Remove
+                <img src="@SpicinessImage(pizza.Spiciness)" alt="@pizza.Spiciness" />
+            </div>
+            <div class="col">
+                <button class="btn btn-success btn-sm" @onclick="@(() => AddToBasket(pizza))">
+                    Add
                 </button>
             </div>
         </div>
     }
-    <div class="row">
-        <div class="col"> Total:</div>
-        <div class="col"> @State.TotalPrice.ToString("C2", culture) </div>
-        <div class="col"> </div>
-    </div>
-
-}
-<h1>Please enter your details below</h1>
-<fieldset>
-    <p>
-        <label for="name">Name:</label>
-        <input id="name" bind="@State.Basket.Customer.Name" />
-        @if (State.Basket.Customer.GetErrors(nameof(Customer.Name)).Any())
+    @if (State.Basket.Orders.Any())
+    {
+        <h1>Your current order</h1>
+        @foreach (var (pizza, pos) in State.Basket.Orders.Select((id, pos) =>
+                (State.Menu.GetPizza(id), pos)))
         {
-            <ul class="validation-error">
-                @foreach (string error in State.Basket.Customer.GetErrors(nameof(Customer.Name)))
-                {
-                    <li>@error</li>
-                }
-            </ul>
+            <div class="row">
+                <div class="col">
+                    @pizza.Name
+                </div>
+                <div class="col">
+                    @pizza.Price.ToString("C2", culture)
+                </div>
+                <div class="col">
+                    <button class="btn btn-danger btn-sm" @onclick="@(()=>RemoveFromBascket(pos))">
+                        Remove
+                    </button>
+                </div>
+            </div>
         }
-    </p>
-    <p>
-        <label for="street">Street:</label>
-        <input id="street" bind="@State.Basket.Customer.Street" />
-        @if (State.Basket.Customer.GetErrors(nameof(Customer.Street)).Any())
+        <div class="row">
+            <div class="col"> Total:</div>
+            <div class="col"> @State.TotalPrice.ToString("C2", culture) </div>
+            <div class="col"> </div>
+        </div>
+
+    }
+    <h1>Please enter your details below</h1>
+    <fieldset>
+        <p>
+            <label for="name">Name:</label>
+            <input id="name" bind="@State.Basket.Customer.Name" />
+            @if (State.Basket.Customer.GetErrors(nameof(Customer.Name)).Any())
+            {
+                <ul class="validation-error">
+                    @foreach (string error in State.Basket.Customer.GetErrors(nameof(Customer.Name)))
+                    {
+                        <li>@error</li>
+                    }
+                </ul>
+            }
+        </p>
+        <p>
+            <label for="street">Street:</label>
+            <input id="street" bind="@State.Basket.Customer.Street" />
+            @if (State.Basket.Customer.GetErrors(nameof(Customer.Street)).Any())
+            {
+                <ul class="validation-error">
+                    @foreach (string error in State.Basket.Customer.GetErrors(nameof(Customer.Street)))
+                    {
+                        <li>@error</li>
+                    }
+                </ul>
+            }
+        </p>
+        <p>
+            <label for="city">City:</label>
+            <input id="city" bind="@State.Basket.Customer.City" />
+            @if (State.Basket.Customer.GetErrors(nameof(Customer.City)).Any())
+            {
+                <ul class="validation-error">
+                    @foreach (string error in State.Basket.Customer.GetErrors(nameof(Customer.City)))
+                    {
+                        <li>@error</li>
+                    }
+                </ul>
+            }
+        </p>
+        <button @onclick="@PlaceOrder" disabled="@State.Basket.Customer.HasErrors">Checkout</button>
+    </fieldset>
+    @if (State.Basket.Orders.Count() > 0)
+    {
+        <p>@State.ToJson()</p>
+    }
+
+
+    @code
+    {
+        private void PlaceOrder()
         {
-            <ul class="validation-error">
-                @foreach (string error in State.Basket.Customer.GetErrors(nameof(Customer.Street)))
-                {
-                    <li>@error</li>
-                }
-            </ul>
+            Console.WriteLine("Placing Order");
         }
-    </p>
-    <p>
-        <label for="city">City:</label>
-        <input id="city" bind="@State.Basket.Customer.City" />
-        @if (State.Basket.Customer.GetErrors(nameof(Customer.City)).Any())
+    }
+
+    @code
+    {
+        private void RemoveFromBascket(int pos)
         {
-            <ul class="validation-error">
-                @foreach (string error in State.Basket.Customer.GetErrors(nameof(Customer.City)))
-                {
-                    <li>@error</li>
-                }
-            </ul>
+            Console.WriteLine($"Removing pizza at pos {pos}");
+            State.Basket.RemoveAt(pos);
         }
-    </p>
-    <button @onclick="@PlaceOrder" disabled="@State.Basket.Customer.HasErrors">Checkout</button>
-</fieldset>
-@if (State.Basket.Orders.Count() > 0)
-{
-    <p>@State.ToJson()</p>
-}
-
-
-@code
-{
-    private void PlaceOrder()
-    {
-        Console.WriteLine("Placing Order");
     }
-}
 
-@code
-{
-    private void RemoveFromBascket(int pos)
+    @code
     {
-        Console.WriteLine($"Removing pizza at pos {pos}");
-        State.Basket.RemoveAt(pos);
-    }
-}
-
-@code
-{
-    private string SpicinessImage(Spiciness spiciness)
-    {
-        return $"images/{spiciness.ToString().ToLower()}.png";
-    }
-}
-@code
-{
-    private void AddToBasket(Pizza pizza)
-    {
-        Console.WriteLine($"Added pizza {pizza.Name}");
-        State.Basket.Add(pizza.Id);
-    }
-}
-
-@code{
-    private State State { get; } = new State()
-    {
-        Menu = new Menu
+        private string SpicinessImage(Spiciness spiciness)
         {
-            Pizzas = new List<Pizza>
-{
-                new Pizza{
-                    Id=1,
-                    Name ="Pepperoni",
-                    Price =8.99,
-                    Spiciness= Spiciness.Spicy
-                },
-                new Pizza{
-                    Id=2,
-                    Name ="Margarita",
-                    Price =7.99,
-                    Spiciness= Spiciness.None
-                },
-                new Pizza{
-                    Id=3,
-                    Name ="Diabolo",
-                    Price =9.99,
-                    Spiciness= Spiciness.Hot
+            return $"images/{spiciness.ToString().ToLower()}.png";
+        }
+    }
+    @code
+    {
+        private void AddToBasket(Pizza pizza)
+        {
+            Console.WriteLine($"Added pizza {pizza.Name}");
+            State.Basket.Add(pizza.Id);
+        }
+    }
+
+    @code{
+        private State State { get; } = new State()
+        {
+            Menu = new Menu
+            {
+                Pizzas = new List<Pizza>
+    {
+                    new Pizza{
+                        Id=1,
+                        Name ="Pepperoni",
+                        Price =8.99,
+                        Spiciness= Spiciness.Spicy
+                    },
+                    new Pizza{
+                        Id=2,
+                        Name ="Margarita",
+                        Price =7.99,
+                        Spiciness= Spiciness.None
+                    },
+                    new Pizza{
+                        Id=3,
+                        Name ="Diabolo",
+                        Price =9.99,
+                        Spiciness= Spiciness.Hot
+                    }
                 }
             }
-        }
-    };
+        };
 
-}
+    }*@

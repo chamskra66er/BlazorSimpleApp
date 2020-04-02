@@ -7,7 +7,7 @@ namespace NewBlazor.Shared
 {
     public class Menu
     {
-        public List<Pizza> Pizzas = new List<Pizza>();
+        public List<Pizza> Pizzas { get; set; } = new List<Pizza>();
         public Pizza GetPizza(int id) =>
             Pizzas.SingleOrDefault(piz=>piz.Id==id);
     }
