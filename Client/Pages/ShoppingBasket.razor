@@ -1,4 +1,9 @@
 ﻿@using NewBlazor.Shared
+@using System.Globalization
+
+@{ 
+    CultureInfo culture = new CultureInfo("en-US");
+}
 
 @if (Basket.Orders.Any())
 {
@@ -11,7 +16,7 @@
     }
     <div class="row">
         <div class="col"> Total: </div>
-        <div class="col"> @TotalPrice </div>
+        <div class="col"> @TotalPrice.ToString("C2", culture) </div>
         <div class="col"> </div>
         <div class="col"> </div>
     </div>
@@ -30,7 +35,7 @@
     protected override void OnParametersSet()
     {
         base.OnParametersSet();
-        Pizzas = Basket.Orders.Select((id, pos) => (pizza: GetPizzaFromId(id), pos: pos));
+        Pizzas = Basket.Orders.Select((id, pos) => (pizza:GetPizzaFromId(id), pos:pos));
         TotalPrice = Pizzas.Select(tuple => tuple.pizza.Price).Sum();
     }
 }
