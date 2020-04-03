@@ -13,13 +13,13 @@
 
 @code {
 
-    [Parametr]
-    protected object Subject { get; set; }
+    [Parameter]
+    public object Subject { get; set; }
 
     [Parameter]
-    protected string Property { get; set; }
+    public string Property { get; set; }
 
-    private INotifyPropertyChanged fix; //  fixes TypeLoadException
+    public INotifyPropertyChanged fix; //  fixes TypeLoadException
 
     public IEnumerable<string> Errors
     {

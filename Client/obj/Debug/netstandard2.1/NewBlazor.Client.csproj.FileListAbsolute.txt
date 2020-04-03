@@ -280,3 +280,7 @@ C:\VS\ASP_Net_Core\Blazor\Test\NewBlazor\Client\obj\Debug\netstandard2.1\Razor\P
 C:\VS\ASP_Net_Core\Blazor\Test\NewBlazor\Client\obj\Debug\netstandard2.1\Razor\Pages\PizzaList.razor.g.cs
 C:\VS\ASP_Net_Core\Blazor\Test\NewBlazor\Client\obj\Debug\netstandard2.1\RazorDeclaration\Pages\ShoppingBasket.razor.g.cs
 C:\VS\ASP_Net_Core\Blazor\Test\NewBlazor\Client\obj\Debug\netstandard2.1\Razor\Pages\ShoppingBasket.razor.g.cs
+C:\VS\ASP_Net_Core\Blazor\Test\NewBlazor\Client\obj\Debug\netstandard2.1\RazorDeclaration\Pages\CustomerEntry.razor.g.cs
+C:\VS\ASP_Net_Core\Blazor\Test\NewBlazor\Client\obj\Debug\netstandard2.1\RazorDeclaration\Pages\ValidationError.razor.g.cs
+C:\VS\ASP_Net_Core\Blazor\Test\NewBlazor\Client\obj\Debug\netstandard2.1\Razor\Pages\CustomerEntry.razor.g.cs
+C:\VS\ASP_Net_Core\Blazor\Test\NewBlazor\Client\obj\Debug\netstandard2.1\Razor\Pages\ValidationError.razor.g.cs

@@ -11,18 +11,30 @@
 
 <!--Menu -->
 <PizzaList Title="Our selected list of pizzas"
-    Menu="@State.Menu"
-    Selected="@((pizza) => AddToBasket(pizza))" />
- <!--Shopping Basket-->
+           Menu="@State.Menu"
+           Selected="@((pizza) => AddToBasket(pizza))" />
+<!--Shopping Basket-->
 <ShoppingBasket Title="Your current order"
-    Basket="@State.Basket"
-    GetPizzaFromId="@State.Menu.GetPizza"
-    Selected="@(pos => RemoveFromBasket(pos))" />
+                Basket="@State.Basket"
+                GetPizzaFromId="@State.Menu.GetPizza"
+                Selected="@(pos => RemoveFromBasket(pos))" />
 <!-- End shopping basket -->
+<!-- Customer entry -->
+@*<CustomerEntry Title="Please enter your details below"
+               @bind-Customer="@State.Basket.Customer"
+               Submit="@((_) => PlaceOrder())" />*@
+<!-- End customer entry -->
+
 
 
 @code
     {
+    protected void OnInit()
+    {
+        this.State.Basket.Customer.PropertyChanged += (sender, e) => this.StateHasChanged();
+    }
+
+
     private void AddToBasket(Pizza pizza)
     {
         Console.WriteLine($"Added pizza {pizza.Name}");
@@ -35,6 +47,11 @@
         State.Basket.RemoveAt(pos);
         StateHasChanged();
     }
+    private void PlaceOrder()
+    {
+        Console.WriteLine($"Placing order {State.Basket.Customer.ToJson()}");
+    }
+
     private State State { get; } = new State()
     {
         Menu = new Menu
